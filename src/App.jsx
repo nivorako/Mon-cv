@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./components/Home";
 import PhoneSvg from "./assets/phone.svg";
+import "./app.css";
 
 function App() {
     return (
