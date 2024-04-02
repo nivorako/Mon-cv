@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         marginLeft: "20px",
     },
     name: {
-        color: "#0f4e6e",
+        
     },
     firstName: {},
     lastName: {
@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
         fontFamily: "Anton",
         letterSpacing: "1px",
         marginTop: "5px",
+        color: "#0f4e6e",
     },
     details: {
         marginTop: "20px",

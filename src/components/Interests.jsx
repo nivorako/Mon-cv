@@ -44,8 +44,7 @@ export const Interests = () => (
                     -
                 </Text>
                 <Text style={styles.interestsDBlock}>
-                    Magasinier expérimenté avec une solide connaissance de la logistique et du
-                    transport.
+                    Informatique
                 </Text>
             </View>
             
@@ -54,9 +53,7 @@ export const Interests = () => (
                     -
                 </Text>
                 <Text style={styles.interestsDBlock}>
-                    Dynamique, fiable et capable de soulever et déplacer des colis lourds en toute
-                    sécurité. Doté d'une expertise dans la gestion de stocks, la planification logistique et
-                    l'optimisation des processus.
+                    Jardinage et bricolage
                 </Text>
             </View>
             <View style={styles.interestsDetail}>
@@ -64,8 +61,7 @@ export const Interests = () => (
                     -
                 </Text>
                 <Text style={styles.interestsDBlock}>
-                    Habitué à travailler dans des environnements exigeants tout en maintenant un haut
-                    niveau d'efficacité
+                    Sport
                 </Text>
             </View>
             

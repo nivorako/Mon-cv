@@ -14,7 +14,7 @@ import {
     Image,
 } from "@react-pdf/renderer";
 
-import Foto from "../assets/logo.png";
+import Foto from "../assets/MaGueule.png";
 import { Profile } from "./Profil";
 import { Title } from "./Title";
 import { Skill } from "./Skills";
@@ -22,34 +22,9 @@ import { Interests } from "./Interests";
 import { Experiences } from "./Experiences";
 
 Font.register({
-    family: "ABeeZee",
-    fonts: [
-        {
-            src: "http://fonts.gstatic.com/s/abeezee/v9/JYPhMn-3Xw-JGuyB-fEdNA.ttf",
-        },
-    ],
-});
-
-Font.register({
     family: "Anton",
     src: "http://fonts.gstatic.com/s/anton/v8/5t8vP9Hx2udzw372glmOxA.ttf",
 });
-
-// Font.register(
-//     {
-//         family: "Bilbo",
-//         src: "http://fonts.gstatic.com/s/bilbo/v6/JqdbkZoDKENg_4351JtArw.ttf"
-//     }
-// );
-
-// Font.register(
-//     {
-//         family: "BilboFont",
-//         format: "trueType",
-//         src:  BilboFont,
-//         fontWeight: 100
-//     }
-// );
 
 const styles = StyleSheet.create({
     page: {
@@ -79,6 +54,7 @@ const styles = StyleSheet.create({
         width: "100%",
         height: "150px",
         borderRadius: "50%",
+        objectFit: "cover"
     },
     line1: {
         width: "80%",
@@ -124,6 +100,10 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         alignItems: "left",
     },
+    experiences: {
+        position: "absolute",
+        top: "230px",
+    }
 });
 
 const DocumentContent = ({ name }) => (
@@ -131,7 +111,7 @@ const DocumentContent = ({ name }) => (
         <Page size="A4" style={styles.page}>
             <View style={styles.section1}>
                 <View style={styles.photo}>
-                    <Image src={Foto} altl="mon image" style={styles.image} />
+                    <Image src={Foto} alt="mon image" style={styles.image} />
                 </View>
                 <Line x1={0} y1={0} x2={250} y2={0} style={styles.line1} />
                 <View style={styles.profile}>
@@ -156,7 +136,10 @@ const DocumentContent = ({ name }) => (
                     y2={0}
                     style={{ borderBottom: 0.2 }}
                 />
-                <Experiences />
+                <View style={styles.experiences}>
+                    <Experiences />
+                </View>
+                
             </View>
         </Page>
     </Document>
